@@ -1,10 +1,10 @@
 <template>
     <div>
         <div v-show="isProcessing" class="loader">Loading...</div>
-        <export @reloadData="loadProducts" v-if="products.data.length > 0"></export>
+        <export @reloadData="loadProducts" v-if="products.total > 0"></export>
         <br>
         <template>
-            <div class="table-responsive"  v-if="products.data.length > 0">
+            <div class="table-responsive"  v-if="products.total > 0">
                 <table class="table">
                     <tr>
                         <th>#</th>

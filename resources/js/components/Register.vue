@@ -124,7 +124,6 @@
         methods : {
             initializeError() {
                 this.fields.forEach((field, index) => {
-                    console.log(field);
                     this.errors[field].type = ""
                     this.errors[field].message = ""
                 })

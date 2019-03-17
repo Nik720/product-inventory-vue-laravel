@@ -862,7 +862,6 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.fields.forEach(function (field, index) {
-        console.log(field);
         _this.errors[field].type = "";
         _this.errors[field].message = "";
       });
@@ -4274,14 +4273,14 @@ var render = function() {
         [_vm._v("Loading...")]
       ),
       _vm._v(" "),
-      _vm.products.data.length > 0
+      _vm.products.total > 0
         ? _c("export", { on: { reloadData: _vm.loadProducts } })
         : _vm._e(),
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
       [
-        _vm.products.data.length > 0
+        _vm.products.total > 0
           ? _c("div", { staticClass: "table-responsive" }, [
               _c(
                 "table",
