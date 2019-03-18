@@ -12,6 +12,6 @@ class ProductsExport implements FromCollection
     */
     public function collection()
     {
-        return Products::select('name','description','stock','sku','price')->where('deleted_at',null)->get();
+        return Products::select('name','description','stock','price','sku')->where('deleted_at',null)->get();
     }
 }

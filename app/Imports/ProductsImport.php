@@ -19,8 +19,7 @@ class ProductsImport implements ToModel
             'description' => $row[1],
             'stock' => $row[2],
             'price' => $row[3],
-            'sku' => $row[4],
-            'new_arrival' => $row[5]
+            'sku' => $row[4]
         ]);
     }
 }

@@ -43,7 +43,6 @@ class ProductsController extends Controller
             'stock' => 'bail|required|numeric',
             'price' => 'bail|required|numeric',
             'sku' => 'bail|required',
-            'image' => 'bail|image'
         ];
         $validatedData =  Validator::make($request->all(), $rules);
         if ($validatedData->fails()) {
@@ -122,8 +121,7 @@ class ProductsController extends Controller
             'description' => 'bail|required',
             'stock' => 'bail|required|numeric',
             'price' => 'bail|required|numeric',
-            'sku' => 'bail|required',
-            'image' => 'nullable'
+            'sku' => 'bail|required'
         ];
         $validatedData =  Validator::make($request->all(), $rules);
         if ($validatedData->fails()) {
